@@ -1,5 +1,78 @@
-<html>
-  <body> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather Dashboard - Biarritz, FR</title>
+</head>
+<body>
 
-  </body>
+    <main>
+        <article id="current-weather">
+            <header>
+                <h1>Monday</h1>
+                <time datetime="2022-06-20">20 Jun 2022</time>
+                <p>
+                    <span role="img" aria-label="location">📍</span>
+                    Biarritz, FR
+                </p>
+            </header>
+
+            <section>
+                <img src="sunny-icon.svg" alt="Sunny">
+                <p>
+                    <strong>29 °C</strong>
+                    <span>Sunny</span>
+                </p>
+            </section>
+        </article>
+
+        <aside id="weather-details">
+            <section aria-label="Current conditions">
+                <dl>
+                    <dt>PRECIPITATION</dt>
+                    <dd>0%</dd>
+                    
+                    <dt>HUMIDITY</dt>
+                    <dd>42%</dd>
+                    
+                    <dt>WIND</dt>
+                    <dd>3 km/h</dd>
+                </dl>
+            </section>
+
+            <section aria-label="Four day forecast">
+                <ul>
+                    <li>
+                        <time datetime="2022-06-21">Tue</time>
+                        <img src="sunny-icon.svg" alt="Sunny">
+                        <span>30 °C</span>
+                    </li>
+                    <li>
+                        <time datetime="2022-06-22">Wed</time>
+                        <img src="partly-cloudy.svg" alt="Partly Cloudy">
+                        <span>22 °C</span>
+                    </li>
+                    <li>
+                        <time datetime="2022-06-23">Thu</time>
+                        <img src="rainy.svg" alt="Rainy">
+                        <span>06 °C</span>
+                    </li>
+                    <li>
+                        <time datetime="2022-06-24">Fri</time>
+                        <img src="sunny-icon.svg" alt="Sunny">
+                        <span>26 °C</span>
+                    </li>
+                </ul>
+            </section>
+
+            <section>
+                <button type="button">
+                    <span role="img" aria-label="location">📍</span>
+                    Change Location: New York City
+                </button>
+            </section>
+        </aside>
+    </main>
+
+</body>
 </html>
